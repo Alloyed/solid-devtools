@@ -12,7 +12,7 @@
 
 For debugging only the pinpoint places parts of the Solid's reactivity graph you are concerned with, right in the console you use all the time.
 
-Provides a variaty of debugging utilities for logging the state and lifecycle of the nodes of reactivity graph to the browser console.
+Provides a variety of debugging utilities for logging the state and lifecycle of the nodes of reactivity graph to the browser console.
 
 API:
 
@@ -25,7 +25,7 @@ API:
 
 ## Installation
 
-The `Logger` package is currently not a part of the main `solid-devtools` library — it has to be installed on it's own.
+The `Logger` package is currently not a part of the main `solid-devtools` library — it has to be installed on its own.
 
 ```bash
 npm i @solid-devtools/logger
@@ -46,7 +46,7 @@ Most of the hooks don't require any arguments to work and are very easy to use.
 
 ### `debugComputation`
 
-Debug the current computation owner by logging it's lifecycle state to the browser console.
+Debug the current computation owner by logging its lifecycle state to the browser console.
 
 Accepts following arguments:
 
@@ -79,9 +79,9 @@ Accepts following arguments:
 
 Following information will be tracked and displayed in the console:
 
-- The computations initial state. (value, name, dependencies, execution time, etc.)
-- The computations state after each rerun. (value, previous value, dependencies, sources that have caused the rerun, execution time, etc.)
-- The computations disposal.
+- The computation's initial state. (value, name, dependencies, execution time, etc.)
+- The computation's state after each rerun. (value, previous value, dependencies, sources that have caused the rerun, execution time, etc.)
+- The computation disposal.
 
 ```tsx
 import { debugOwnerComputations } from "@solid-devtools/logger"
@@ -146,8 +146,8 @@ Accepts following arguments:
 
 Following information will be tracked and displayed in the console:
 
-- The signals initial state. (value, name, observers, etc.)
-- The signals state after each value update. (value, previous value, observers, caused reruns, etc.)
+- The signal's initial state. (value, name, observers, etc.)
+- The signal's state after each value update. (value, previous value, observers, caused reruns, etc.)
 
 ```tsx
 import { debugOwnerSignals } from '@solid-devtools/logger'
